@@ -1,0 +1,74 @@
+
+
+// images(png/jpg)
+export { default as facebookIcon } from './facebook.png';
+export { default as youtubeIcon } from './youtube.png';
+export { default as telegramIcon } from './telegram.png';
+export { default as  discordIcon} from './discord.png';
+export { default as socialMediaIcon } from './socialMedia.png';
+export { default as alienIcon } from './alien.png';
+export { default as twitterIcon } from './twitter.png';
+export { default as linkedinIcon } from './linkedin.png';
+export { default as landingVector } from './LandingVector.svg';
+export { default as invertedCommaIcon } from './invertedComa.png';
+export { default as founderImg } from './founderImg.png';
+export { default as ROICalcImg } from './ROICalcImageNew.svg';
+export { default as reviewerImg } from './JC Big.png';
+export { default as reviewerImg1 } from './reviewerImg1.png';
+export { default as reviewerImg2 } from './reviewerImg2.png';
+export { default as reviewerImg3 } from './Thomas Walls Big.png';
+export { default as reviewerImg4 } from './Sydney Zhao Big.png';
+export { default as whyNFTYvector } from './whyNFTYvector.svg';
+export { default as profilePic1 } from './profilePic1.png';
+export { default as staticVideoImg } from './Video play image.svg';
+export { default as whitePaperSectionImg } from './WhitepaperSectionRightSide.svg';
+export { default as AboutUsImg } from './AboutUsImg.png';
+export { default as ContactUsImg } from './contactUsImg.svg';
+export { default as CEOImg } from './CEOImg.svg';
+export { default as MikeNash } from './MikeNash.jpg';
+export { default as AlanTietel } from './Alan.jpg';
+export { default as CEOImgPng } from './CEO.png';
+export { default as missionImg } from './missionImg.svg';
+export { default as vissionImg } from './vissionImg.svg';
+export { default as leftArrowImg } from './leftArrow.svg';
+export { default as rightArrowImg } from './rightArrow.svg';
+export { default as Logo } from './Logo.png';
+export { default as chrisMillsImg } from './chrisMills.svg';
+export { default as chrissyCook } from './chrissyCook.png';
+export { default as clintonMillsImg } from './ClintonMills.svg';
+export { default as edMillsImg } from './EddMills.svg';
+export { default as JCImg } from './JC.svg';
+export { default as SteveBriggsImg } from './StiveBriggs.svg';
+export { default as ThomasImg } from './Thomas.svg';
+export { default as SydneyImg } from './Sydney.svg';
+export { default as linkedinColored } from './linkedInColored.svg';
+export { default as twitterColored } from './twitterColored.svg';
+export { default as callImg } from './callImg.svg';
+export { default as mailSupportImg } from './mailSupportImg.svg';
+export { default as chatWithUs } from './chatWithUs.svg';
+export { default as RoadMapFlow } from './RoadMapFlow.svg';
+export { default as RoadMapImg } from './RoadMapImg.svg';
+export { default as Privacy} from './Privacy.svg';
+export { default as Vector } from './Vector.svg';
+export { default as Phone} from './Phone.svg';
+export { default as Email} from './Email.svg';
+export { default as GovernanceImg } from './GovernanceImg.svg';
+export { default as TermsImg } from './TermsImg.svg';
+export { default as elvinChevry } from './evelyne-chevry-1.png';
+export { default as JP } from './jp.png';
+export { default as SteveWood } from './steve-wood.png';
+export { default as AdamAlonzi } from './adam-alonzi.png';
+export { default as JackCollins } from './jake-collins-1.png';
+export { default as NewsPageImg } from './NewsPageImg.svg';
+export { default as RoadMapDark } from './RoadMapDark.png';
+export { default as DarkAboutNft } from './DarkAboutNft.png';
+export { default as DarkVector } from './DarkVector.svg';
+export { default as DarkHam } from './DarkHam.svg';
+export { default as DarkROI } from './DarkROI.png';
+export { default as DarkROICal } from './DarkROICal.png';
+export { default as lightHam } from './lightHam.png';
+export { default as profilePicImg } from './profile.png';
+export { default as leaderboardDark } from './leaderboardDark.png';
+
+
+

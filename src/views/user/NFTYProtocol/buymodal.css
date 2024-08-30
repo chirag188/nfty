@@ -1,0 +1,46 @@
+.btn-wrapper {
+  width: 300px;
+  justify-content: space-around;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  background: #ffa500a8;
+  height: 100px;
+  border-radius: 38px;
+}
+.mid-container {
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+}
+.close {
+  font-weight: 900;
+  margin-right: 10px;
+  margin-top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.white-ring {
+  padding: 7px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.container1 {
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+.coins-container {
+  width: 30%;
+}
+.coins-container img {
+  height: 50px;
+  border-radius: 50%;
+  width: 50px;
+}
+.modal-content .close {
+  color: #000000;
+}
+.container1 a {
+  text-decoration: none;
+}

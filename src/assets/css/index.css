@@ -1,0 +1,1427 @@
+@font-face {
+  font-family: 'Gordita';
+  src: url('../fonts/Gordita-Regular.ttf') format('truetype'),
+    url('../fonts/Gordita-Regular.woff2') format('woff2');
+  font-weight: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+body {
+  font-family: 'Gordita', Arial, Helvetica, sans-serif;
+}
+/*chrome,safari */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+.hidesection {
+  opacity: 0.5;
+  pointer-events: none;
+}
+body {
+  background-color: #fafafa;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  transition: background 0.2s linear;
+}
+
+body.dark {
+  background: #000000;
+  color: #ffffff;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: #111;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+}
+
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: #000;
+}
+
+.fa-sun {
+  color: #fff;
+}
+
+.container,
+.nfty-protocol {
+  display: flex;
+  flex-direction: column;
+  /* display: grid; */
+  /* grid-template-columns: repeat(5, 1fr); */
+  /* grid-auto-rows: minmax(100px, auto); */
+  padding-top: 30px;
+  padding-bottom: 50px;
+  grid-gap: 10px;
+  width: 100%;
+}
+.navbar {
+  box-shadow: 0px -1px 4px -1px;
+  height: 58px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+
+.nav-item hr {
+  height: 2px;
+  opacity: 1;
+}
+
+body.dark hr.active {
+  height: 2px;
+  background: #ffffff;
+}
+.dropdown-menu hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.dropdown-menu {
+  width: 300px;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  min-height: 140px;
+  margin-top: 8px;
+  /* display: none; */
+}
+body.dark .dropdown-menu {
+  border: 1px solid #0c0b0f;
+}
+
+body.dark .dropdown-btn:hover {
+  background-color: #0c0b0f;
+}
+
+body.dark button:not(:disabled) {
+  /* background-color: #000000; */
+}
+body.dark .btn-primary:not(:disabled):not(.disabled):active {
+  background-color: #0c0b0f;
+}
+.nav-tab {
+  display: none;
+}
+
+.f-18 {
+  font-size: 18px;
+}
+
+.dropdown-item:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark .dropdown-item {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+body.dark .dropdown-menu {
+  background: #000000;
+}
+.dropdown-btn {
+  border: 0;
+  background-color: #ffffff;
+  padding: 0;
+  display: none;
+}
+.dropdown-btn .hamburger-icon {
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
+}
+
+.navbar-brand {
+  margin-left: 75px;
+}
+.navbar-brand .nfty-brand-logo {
+  height: 30px;
+}
+.nav .nav-link {
+  color: #000000;
+  font-size: 15px;
+  padding: 0rem 1rem;
+}
+.nfty-number {
+  color: #000000;
+}
+body.dark .nfty-number {
+  color: #ffffff;
+}
+
+body.dark .nav .nav-link {
+  color: #ffffff;
+}
+.nav-buy-app {
+  align-items: center;
+}
+.nav-buy-app .day-night-icon {
+  height: 20px;
+  margin-left: 20px;
+}
+.nav-buy-app .app-btn,
+.dropdown-item .app-btn {
+  background: linear-gradient(270deg, #ff8e09 0%, #ffc209 100%);
+  border-radius: 400px;
+  font-size: 14px;
+  border: none;
+  padding: 6px 12px;
+  font-weight: 600;
+  color: #000000;
+  text-decoration: none;
+}
+
+.width-fit-content {
+  width: fit-content;
+}
+.video-box {
+  /* position: relative;
+    top: 66px; */
+  /* left: 220px; */
+}
+/* .video-box {
+  overflow: hidden;
+  padding-bottom: 100%;
+  position: relative;
+}
+
+.video-box iframe {
+  left: 0;
+  top: 66px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+} */
+
+.youtube-video,
+iframe#widget2 {
+  margin-top: 50px;
+}
+
+.stake-data-percentage {
+  color: #16d194;
+  font-weight: 700;
+  margin-left: 9px;
+  min-width: 81px;
+  margin-top: 1px;
+}
+.stake-data-percentage-down {
+  color: red;
+  font-weight: 700;
+  margin-left: 9px;
+  min-width: 81px;
+  margin-top: 2px;
+}
+.stake-data-percentage-down .polygon-icon {
+  height: 12px;
+}
+.stake-data-percentage .polygon-icon {
+  height: 14px;
+}
+.active {
+  height: 2px;
+  background: #000000;
+  margin-bottom: -19px;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+.justify-content-space-evenly {
+  justify-content: space-evenly;
+}
+
+.f-b {
+  font-weight: bold;
+}
+.modal-width {
+  width: 75%;
+}
+.f-14 {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.f-12 {
+  font-size: 12px;
+}
+
+.f-24 {
+  font-size: 24px;
+}
+.f-20 {
+  font-size: 20px;
+}
+
+.justify-content-space-around {
+  justify-content: space-around;
+}
+
+.dropdown-btn:hover {
+  background-color: #ffffff;
+  color: #dfdfdf;
+}
+
+.dropdown-btn:focus {
+  background-color: #ffffff;
+  border: none;
+}
+.btn-primary:focus,
+.btn-primary.focus {
+  box-shadow: none;
+}
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: none;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #000000;
+  background-color: #ffffff;
+  border: none;
+}
+
+.navbar-btns {
+  align-items: center;
+}
+
+.navbar-btns img {
+  height: 20px;
+  width: 20px;
+}
+.hr-footer {
+  margin-top: 40px;
+}
+
+.footer {
+  padding: 20px 75px;
+}
+
+.footer .footer-link,
+.chat-with-us {
+  text-decoration: none;
+  color: #000000;
+}
+body.dark .footer .footer-link {
+  color: #ffffff;
+}
+.footer .footer-first-column {
+  padding-right: 100px;
+}
+#Embed {
+  display: none !important;
+}
+
+.footer .footer-icon-link {
+  margin-right: 15px;
+}
+
+.footer-icon-link img {
+  margin-top: 10px;
+}
+
+.cms-footer {
+  display: flex;
+  justify-content: center;
+  background: #fafafa;
+  padding: 10px 3px;
+}
+body.dark .cms-footer {
+  background: #000000;
+}
+
+.cms-footer .cms-footer-content {
+  margin-right: 50px;
+}
+.cms-footer .cms-content {
+  margin-right: 15px;
+}
+
+.cms-footer .footer-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+body.dark .cms-footer .footer-link {
+  color: #ffffff;
+}
+
+.cms-footer-content .copy-right-icon {
+  font-size: 13px;
+  margin-right: 3px;
+}
+
+.nfty-protocol .protocol-head,
+.nfty-protocol .data-display,
+.nfty-protocol .tokenomics-whitepaper,
+.nfty-protocol .about-nfty,
+.nfty-protocol .why-nfty,
+.nfty-protocol .buyer-review {
+  padding-left: 78px;
+  padding-bottom: 30px;
+}
+
+.nfty-protocol .subscribe-section {
+  padding: 40px 78px 30px 78px;
+}
+.error {
+  color: red;
+}
+.disabled {
+  background: gray !important;
+}
+.nfty-protocol .social-ranking,
+.faq-section .faq,
+.about-us,
+.governance {
+  padding: 30px 78px;
+}
+.aide {
+  padding: 30px 78px;
+}
+.nfty-protocol .achivement-section {
+  padding: 30px 78px;
+  margin-bottom: 300px;
+}
+.nfty-protocol .about-nfty {
+  margin-top: 50px;
+}
+.nfty-protocol .tokenomics-whitepaper {
+  background: #d7ffe8;
+  padding-top: 20px;
+}
+.tokenomics-whitepaper .white-paper-img {
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  /* margin-right: -24px; */
+  margin-top: 24px;
+}
+.darkmode-aline {
+  margin-left: 10px;
+}
+
+.tokenomics-whitepaper .white-paper-img img {
+  height: 600px;
+  width: 700px;
+  margin-top: 25px;
+}
+
+.about-us-heading .heading-text,
+.terms-heading .heading-text,
+.roadMap-heading .roadMap-text,
+.privacy-heading .privacy-text,
+.contact-us-heading .heading-text,
+.governance-heading .heading-text,
+.news-heading .heading-text {
+  font-size: 36px;
+  font-weight: bold;
+  padding-right: 36px;
+  padding-top: 36px;
+}
+.protocol-head .heading-text {
+  margin-top: 60px;
+  font-family: Gordita;
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.protocol-head .simple-text {
+  font-family: Gordita;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 30px;
+  padding-right: 60px;
+  margin-left: 5px;
+}
+
+.protocol-head .buy-btn {
+  background: #000000;
+  border-radius: 400px;
+  padding: 15px 30px;
+  margin-top: 15px;
+  border: none;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 8px;
+}
+body.dark .protocol-head .buy-btn {
+  background: #ffffff;
+  color: #000000;
+}
+
+.aide-head .buy-btn {
+  background: #000000;
+  border-radius: 8px;
+  padding: 7px 30px;
+  height: 42px;
+  border: none;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: auto;
+}
+body.dark .aide-head .buy-btn {
+  background: #ffffff;
+  color: #000000;
+}
+
+.protocol-head .app-launch-btn,
+.why-nfty .app-launch-btn {
+  background: linear-gradient(270deg, #ff8e09 0%, #ffc209 100%);
+  border-radius: 400px;
+  padding: 15px 30px;
+  margin-top: 15px;
+  border: none;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+  margin-left: 8px;
+}
+.protocol-head .app-launch-btn {
+  padding: 15px 30px;
+  font-weight: 700;
+  font-family: Gordita;
+}
+.aide-head .partnership {
+  border-right: 2px solid lightgray;
+  border-left: 2px solid lightgray;
+}
+.aide-head .app-launch-btn,
+.why-nfty .app-launch-btn {
+  background: linear-gradient(270deg, #ff8e09 0%, #ffc209 100%);
+  border-radius: 8px;
+  padding: 7px 30px;
+  height: 42px;
+  border: none;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+  margin-left: 8px;
+}
+.application_filed {
+  margin-top: 1rem;
+}
+.aide-head .app-launch-btn {
+  font-weight: 700;
+  font-family: Gordita;
+}
+.application-header {
+  text-align: center;
+  margin: auto;
+  width: 80%;
+}
+.form_application {
+  width: 80%;
+  margin: auto;
+}
+.form_application label {
+  font-weight: bold;
+}
+.protocol-head .right-images {
+  background-image: url('../images/BG\ of\ Video\ section.svg');
+  display: flex;
+  /* justify-content: flex-end; */
+  margin-right: -24px;
+  background-repeat: no-repeat;
+  background-size: center;
+  margin-left: 175px;
+}
+
+.protocol-head .right-images .static-video-img {
+  height: 456px;
+  /* margin-top: 47px; */
+}
+
+.data-display .heading-text {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.opacity {
+  opacity: 0.6;
+}
+
+.about-nfty .heading-text,
+.why-nfty .heading-text {
+  font-size: 42px;
+  font-weight: bold;
+  /* margin-top: 10px; */
+  /* color: #000000; */
+  font-family: Gordita;
+}
+
+.subscribe .heading-text,
+.buyer-review .heading-text,
+.social-ranking .heading-text,
+.faq .heading-text {
+  font-size: 32px;
+  font-weight: bold;
+}
+.tokenomics-whitepaper .heading-text {
+  font-family: Gordita;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+body.dark .tokenomics-whitepaper .heading-text,
+body.dark .tokenomics-whitepaper .simple-text {
+  color: #000000;
+}
+.coming-soonbtn {
+  margin-left: 6px;
+}
+
+.tokenomics-whitepaper .simple-text {
+  font-family: Gordita;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 5px;
+}
+
+.about-nfty .simple-text {
+  font-family: Gordita;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 10px;
+  max-width: 500px;
+}
+.why-nfty .simple-text {
+  font-size: 14px;
+  opacity: 0.8;
+  padding-right: 60px;
+  margin-top: 8px;
+}
+.hero-head .coming-soonbtn {
+  margin-top: 4px;
+}
+
+.tokenomics-whitepaper .read-more-btn {
+  background: #000000;
+  border-radius: 700px;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-top: 15px;
+  text-decoration: none;
+}
+.quick-contact .submit-btn {
+  background: #000000;
+  border-radius: 400px;
+  border: none;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px 20px;
+  margin-top: 12px;
+}
+
+.application_filed .submit-btn {
+  margin: auto;
+  border-radius: 8px;
+  display: flex;
+  padding: 12px 50px;
+  justify-content: center;
+}
+
+.nfty-protocol .tokenomics-vector {
+  background: linear-gradient(180deg, #d7ffe8 0%, #ffffff 75.31%);
+  margin-top: -10px;
+}
+body.dark .nfty-protocol .tokenomics-vector {
+  /* background: linear-gradient(180deg, #E7FFF7 17.47%, #121113 81.52%); */
+  background: linear-gradient(180deg, #e7fff7 17.47%, rgba(18, 17, 19, 0) 81.52%);
+}
+/* button:not(:disabled), [type=button]:not(:disabled){
+  background:#ffffff;
+} */
+
+body.dark .show > .btn-primary.dropdown-toggle {
+  background-color: #0c0b0f;
+  border: none;
+}
+
+body.dark .about-us-heading,
+body.dark .privacy-heading,
+body.dark .roadMap-heading,
+body.dark .contact-us-heading,
+body.dark .governance-heading,
+body.dark .terms-heading,
+body.dark .news-heading {
+  background: #0c0b0f;
+}
+
+body.dark .about-us-container .mission-data,
+body.dark .about-us-container .vission-data {
+  background: #0c0b0f;
+}
+body.dark .team-member-card {
+  background: #0c0b0f;
+  box-shadow: none;
+}
+body.dark .about-us-container .navigation-section .nav-link,
+body.dark .governance-container .navigation-section .nav-link {
+  color: #ffffff;
+  /* background: #FFC209; */
+  border-radius: 5px;
+}
+
+body.dark .nfty-protocol .tokenomics-whitepaper {
+  background: #e7fff7;
+}
+
+body.dark hr:not([size]) {
+  height: 2px;
+}
+
+.about-nfty .inverted-coma-img {
+  height: 60px;
+  padding-bottom: 20px;
+}
+
+.about-nfty .founder-text {
+  padding: 53px 45px 10px 0px;
+  font-family: Gordita;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.about-nfty .founder-details {
+  padding-left: 5px;
+  display: flex;
+}
+
+.displayauto {
+  display: flex;
+  justify-content: center;
+}
+.founder-details .founder-img {
+  height: 70px;
+  border-radius: 10px;
+}
+
+.founder-details .founder-name {
+  align-items: center;
+  display: flex;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.nfty-protocol .why-nfty {
+  background-image: url('../images/whyNFTYvector.svg');
+  padding-top: 70px;
+}
+body.dark .nfty-protocol .why-nfty {
+  background-image: url('../../assets/images/whynftDark.png');
+}
+.why-nfty .heading-sub-text {
+  font-family: Gordita;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 15px;
+  max-width: 400px;
+}
+.buyer-review .heading-sub-text {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  padding-right: 150px;
+}
+
+.why-nfty .simple-text {
+  padding-right: 150px;
+  font-family: Gordita;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 2px;
+}
+.roi-head {
+  font-family: Gordita;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.why-nfty .roi-calc-img {
+  height: 750px;
+}
+
+.subscribe-section .subscribe {
+  background: #f8f7f7;
+  border-radius: 20px;
+  padding: 50px 70px;
+  text-align: center;
+}
+
+body.dark .subscribe-section .subscribe {
+  background: #0c0b0f;
+}
+
+.subscribe .input-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.input-section input {
+  max-width: 400px;
+  font-size: 14px;
+  border: none;
+  padding: 12px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.input-section input:focus {
+  border-color: #ffffff;
+  box-shadow: none;
+}
+.input-section .read-more-btn {
+  background: #000000;
+  border-radius: 8px;
+  border: none;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 6px 20px;
+}
+
+.buyer-review .reviewer-name {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.buyer-review .reviewer-role {
+  font-size: 13px;
+  opacity: 0.6;
+  margin-top: 4px;
+}
+
+.buyer-review .other-reviewer-img {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 70%;
+}
+
+.other-reviewer-img img {
+  height: 80px;
+  width: 80px;
+  cursor: pointer;
+}
+
+.buyer-review .reviewer-img {
+  height: 350px;
+  border-radius: 20px;
+  width: 300px;
+  object-fit: cover;
+}
+
+.social-ranking .table-section {
+  margin-top: 20px;
+}
+
+.social-ranking .table-header {
+  background: #ffd600;
+}
+
+.social-ranking th {
+  padding-top: 14px;
+}
+
+.social-ranking tbody td {
+  padding-left: 12px;
+}
+
+body.dark .social-ranking tbody td {
+  color: #ffffff;
+}
+.nfty-protocol .faq-section {
+  /* background: linear-gradient(180deg, #F1F0EB 0%, rgba(243, 243, 243, 0) 62.91%); */
+  background-image: url('../images//faqVector.svg');
+  /* background-repeat: no-repeat; */
+  padding-top: 70px;
+}
+
+body.dark .nfty-protocol .faq-section {
+  background-image: url('../images/faqDark.png');
+}
+
+.faq .plus-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 34px;
+  margin-top: 3px;
+}
+
+body.dark .faq .plus-btn {
+  color: #ffffff;
+  background: none;
+}
+
+.faq hr {
+  margin: 0;
+  padding-top: -20px;
+}
+.slick-prev {
+  left: -3% !important;
+  z-index: 10;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: #000 !important;
+  font-size: 2rem !important;
+}
+.slick-next {
+  right: -3% !important;
+  z-index: 10;
+}
+.slick-arrow .slick-next {
+  display: block;
+}
+.slick-dots li button:before {
+  font-size: 18px !important;
+}
+.item .art-text {
+  margin: auto !important;
+}
+.item img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: auto;
+  object-fit: cover;
+}
+.showcase img {
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  border-radius: 5%;
+  margin: auto;
+  object-fit: cover;
+}
+.item .head-text {
+  font-size: 22px;
+  font-weight: bold;
+}
+.slick-dots {
+  margin-top: 1rem !important;
+}
+.art-text {
+  border: 1px solid gray;
+  border-radius: 1rem;
+}
+.item {
+  padding: 1.2rem;
+}
+.item .fa {
+  margin: 4px !important;
+  zoom: 2.2;
+}
+@media (max-width: 768px) {
+  figure > img {
+    width: -moz-available; /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+    width: fill-available;
+  }
+  .form_application {
+    width: auto;
+  }
+  .row > * {
+    padding: auto;
+  }
+  .row {
+    margin: auto;
+  }
+  .aide {
+    padding: 12px !important;
+  }
+}
+.item a {
+  color: black;
+  text-decoration: none;
+}
+body.dark .item a {
+  color: white;
+}
+.feature {
+  display: none !important;
+}
+.back_arrow {
+  color: black;
+}
+.special-label {
+  font-weight: bold;
+}
+body.dark .Toastify__toast--success,
+body.dark .Toastify__toast--error {
+  background-color: black !important;
+  color: white !important;
+}
+body.dark .back_arrow {
+  color: white;
+}
+.feature-down {
+  display: flex !important;
+}
+.aide .item .normal-text {
+  max-height: 145px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media (max-width: 990px) {
+  .displayauto {
+    display: block;
+  }
+  .feature {
+    display: flex !important;
+  }
+  .feature-down {
+    display: none !important;
+  }
+  .aide-head .beone {
+    margin-bottom: 1rem !important;
+  }
+}
+.aide .slick-slider {
+  max-width: 860px;
+  margin: auto;
+}
+@media (min-width: 990px) or (max-width: 468px) {
+  .app-launch-btn,
+  .buy-btn {
+    margin: auto;
+  }
+}
+@media (min-width: 468px) and (max-width: 990px) {
+  .buy-btn {
+    margin: 0px;
+    margin-left: auto !important;
+  }
+  .app-launch-btn {
+    margin-left: 10px;
+  }
+}
+@media (min-width: 468px) {
+  .aide-head .buy-btn,
+  .aide-head .app-launch-btn {
+    padding: 7px 15px !important;
+  }
+}
+@media (max-width: 1300px) {
+  .slick-next {
+    right: 4% !important;
+  }
+  .slick-prev {
+    left: 3% !important;
+  }
+  @media (max-width: 468px) {
+    .slick-next {
+      right: 10% !important;
+    }
+    .slick-prev {
+      left: 6% !important;
+    }
+    .modal-width {
+      width: 95%;
+    }
+  }
+}
+.item .link {
+  justify-content: space-between;
+  display: flex;
+  width: 70%;
+  margin: auto;
+  align-items: center;
+}
+.item .link p {
+  margin: auto;
+}
+.newsBox {
+  border: 1px solid gray;
+  border-radius: 19px;
+}
+.achivement-section .active {
+  height: 0px;
+  background: #ffffff;
+  /* margin-bottom: -19px; */
+}
+.achivement-section a.active.nav-link {
+  height: 0px;
+  /* background: #ffffff; */
+  border-bottom: 5px solid #ffc209;
+  padding-bottom: 5px;
+}
+
+.achivement-section .nav .nav-link {
+  padding: 0;
+  margin-right: 35px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  background: none;
+}
+
+.achivement-section .nav-link {
+  display: inline;
+  transition: none;
+}
+
+.achivement-section .top-stakers-data .single-data,
+.achivement-section .longest-streak-data .single-data {
+  background: #f8f7f7;
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+body.dark .achivement-section .top-stakers-data .single-data,
+body.dark .achivement-section .longest-streak-data .single-data {
+  background: #0c0b0f;
+}
+
+.single-data .margin-left {
+  margin-left: 35px;
+}
+body.dark .achivement-section a.active.nav-link {
+  background: none;
+}
+.about-us-heading,
+.privacy-heading,
+.roadMap-heading,
+.contact-us-heading,
+.governance-heading,
+.terms-heading,
+.news-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background: #fafafa;
+  padding: 30px 78px;
+}
+.user-details {
+  align-items: baseline;
+  background: #fafafa;
+  justify-content: center;
+  padding: 30px;
+}
+.user-details p{
+  padding-right: 40px;
+}
+body.dark .user-details{
+  background-color: #000;
+}
+.user_details_link{
+  text-decoration: none;
+  color: #000;
+}
+body.dark .user_details_link{
+  color: white;
+}
+@media (min-width: 356px) and (max-width: 440px) {
+  .user-details {
+    padding: 0px 20px;
+  }
+}
+.user-details .heading-text {
+  font-size: 36px;
+  font-weight: bold;
+}
+.fa-userlink {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+.fa-userlink .fa {
+  zoom: 1.6;
+  margin-right: 0.2rem;
+}
+.about-us-heading .about-us-img img,
+.roadMap-heading .roadMap-img img,
+.privacy-heading .privacy-img img,
+.contact-us-heading .contact-us-img img {
+  height: 300px;
+}
+
+.contact-us-heading .contact-us-img img,
+.governance-heading .governance-img img,
+.terms-heading .terms-img img,
+.news-heading .news-img img {
+  height: 300px;
+}
+
+.about-us-container .navigation-section .nav-link,
+.governance-container .navigation-section .nav-link {
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.about-us-container .navigation-section .nav-link:focus,
+.governance-container .navigation-section .nav-link:focus {
+  background: #ffc209;
+  border-radius: 5px;
+}
+
+.about-us-container .head-text,
+.contact-us-container .head-text,
+.support-section .head-text,
+.governance-container .head-text,
+.terms-container .head-text,
+.news-container .head-text {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.about-us-container .normal-text,
+.contact-us-container .normal-text,
+.governance-container .normal-text,
+.terms-container .normal-text,
+.news-container .normal-text {
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.about-us-container .ceo-msg {
+  margin-top: 50px;
+  display: flex;
+}
+
+.ceo-msg .message-section {
+  margin-left: 30px;
+}
+
+.about-us-container .mission-data,
+.about-us-container .vission-data {
+  background: #fafafa;
+  border-radius: 10px;
+  padding: 20px 40px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+}
+.about-us-container .sub-head-text,
+.support-section .sub-head-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.about-us-container .our-team {
+  margin-top: 40px;
+}
+
+.team-member-card .logo-img {
+  height: 30px;
+}
+.team-member-card {
+  background: #ffffff;
+  box-shadow: 0px 0px 30px rgba(230, 230, 230, 0.4);
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 20px;
+  max-width: 300px;
+  margin-right: 15px;
+  height: 300px;
+}
+.team-member-card .team-member-img,
+.testimonial-section .testimonial-img {
+  height: 60px;
+}
+
+.team-member-card .team-member-name,
+.testimonial-section .testimonial-name {
+  margin-left: 20px;
+  align-self: center;
+}
+
+.about-us-container .testimonial-section {
+  margin: 50px 0px;
+}
+
+.contact-us {
+  padding: 50px 220px;
+}
+
+.contact-us-container .quick-contact {
+  margin-top: 60px;
+}
+
+.quick-contact .form-control:focus {
+  border-color: #000000;
+  box-shadow: none;
+  border: 1px solid #000000;
+}
+.application_filed .form-control {
+  margin-top: 0.4rem;
+  background: white;
+}
+.form-control {
+  background: white;
+}
+.quick-contact .form-control,
+.quick-contact .text-area {
+  padding: 10px 20px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 11px;
+}
+
+.quick-contact .text-area {
+  height: 130px;
+}
+
+.support-section {
+  background: #e7fff7;
+  padding: 30px 70px;
+  margin-bottom: -40px;
+}
+body.dark .support-section {
+  background: #0c0b0f;
+}
+body.dark .card {
+  background: #000000;
+  box-shadow: 0px 0px 30px rgba(230, 230, 230, 0.4);
+  border-radius: 5px;
+}
+body.dark .chat-with-us {
+  color: #ffffff;
+}
+body.dark .quick-contact .form-control,
+body.dark .quick-contact .text-area {
+  background: white;
+  border: 2px solid #000000;
+  color: black;
+}
+
+body.dark .quick-contact .submit-btn {
+  background: #0c0b0f;
+}
+
+.support-section .card-container {
+  width: 250px;
+  margin: 5px 20px;
+}
+
+.support-section .card-container .card {
+  align-items: center;
+  padding: 25px;
+  height: 181px;
+}
+div.nfty-protocol.container-fluid {
+  padding: 0px;
+}
+
+.protocol-head .button-group {
+  margin-top: 40px;
+}
+
+.news-container .date-text {
+  font-size: 18px;
+  /* margin-left: 13px; */
+  align-self: center;
+}
+
+.single-data img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+}
+
+.artist-img{
+  /* box-shadow: rgb(149 160 165 / 65%) 25px 25px 24px; */
+  border-radius: 10px;
+}

@@ -1,0 +1,51 @@
+.roadMap-text {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: left;
+  margin-left: -20pxpx;
+  margin-bottom: 50px;
+}
+
+.roadMap-flow {
+  background: #f0ca00;
+  border-radius: 15px;
+  text-align: center;
+  margin: auto;
+  height: 65px;
+  min-width: 700px;
+}
+
+.roadMap-flow-head {
+  font-size: 22px;
+  font-weight: bold;
+
+  letter-spacing: 0em;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.roadmap-flow {
+  width: auto;
+  height: 700px;
+}
+.roadmap-text {
+  margin-top: 50px;
+  line-height: 30px;
+  font-size: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.roadmap-text .link {
+  text-decoration: none;
+  color: black;
+}
+.roadmap-underline {
+  border-bottom: 3px solid #f0ca00;
+}
+
+@media (min-width: 356px) and (max-width: 440px) {
+  .roadMap-flow {
+    height: 75px;
+    min-width: 300px;
+  }
+}

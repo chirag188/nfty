@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: nfty-landingpage-dev-ingress
+  namespace: nfty-dev
+spec:
+  rules:
+  - host: nftytoken.io
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: nftysvc
+            port: 
+              number: 80
+  ingressClassName: nginx

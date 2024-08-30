@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2021-10-27T07:38:53Z"
+  labels:
+    app: nfty-landingpage-frontend-svc
+  name: nftysvc
+  namespace: nfty-dev
+  resourceVersion: "343645"
+  uid: fc8ec7e1-920f-4425-b709-aa9e8dd65b86
+spec:
+  clusterIP: 10.100.244.237
+  clusterIPs:
+  - 10.100.244.237
+  externalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - nodePort: 30129
+    port: 80
+    protocol: TCP
+    targetPort: 3001
+  selector:
+    app: nfty-landingpage-frontend
+  sessionAffinity: None
+  type: NodePort
+status:
+  loadBalancer: {}

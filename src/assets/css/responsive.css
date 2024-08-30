@@ -1,0 +1,542 @@
+@media (min-width: 1441px) {
+  .nfty-protocol .protocol-head {
+    width: fit-content;
+    margin: auto;
+  }
+  .tokenomics-whitepaper .white-paper-img img{
+    margin-left:-35px ;
+  }
+  .tokenomics-whitepaper{
+    width: fit-content;
+    margin:auto;
+  }
+  .nfty-protocol .about-nfty {
+    width: fit-content;
+    margin:auto;
+}
+.nfty-protocol .tokenomics-vector{
+  margin:auto;
+  margin-top: -12px;
+}
+.why-nfty{
+  width: fit-content;
+  margin:auto;
+}
+.nfty-protocol .social-ranking{
+  /* width: fit-content; */
+  margin:auto;
+  padding: auto;
+}
+.faq-section{
+  
+  /* width: fit-content; */
+  margin:auto;
+    padding: auto;
+}
+.footer{
+  margin-top: 50px;
+  width: fit-content;
+  margin: auto;
+}
+.navbar {
+  margin:auto;
+}
+.subscribe-section{
+  /* width: fit-content; */
+  margin: auto;
+  padding: 0px 40px;
+}
+.buyer-review{
+  width: fit-content;
+  margin:auto;
+}
+.containerss {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+ }
+
+
+
+@media (max-width: 1024px){
+  .protocol-head .heading-text{
+    font-size:48px;
+    line-height:60px;
+  }
+  .protocol-head .right-images{
+    margin-left:0px;
+  }
+  .protocol-head .right-images .static-video-img{
+    height: 400px;
+  }
+  .protocol-head .simple-text {
+    margin-top:20px;
+  }
+  .tokenomics-whitepaper .white-paper-img img{
+    width:485px;
+  }
+  .tokenomics-whitepaper .heading-text{
+    font-size:38px;
+  }
+  .why-nfty .roi-calc-img {
+    height: 650px;
+}
+.why-nfty .heading-text {
+font-size:36px;
+}
+.why-nfty .heading-sub-text {
+  font-size:24px;
+  line-height:45px;
+}
+.static-video-img{
+  width: reset;
+}
+iframe#widget2{
+  margin-top:50px;
+  width: 450px;
+}
+.nfty-protocol.container-fluid{
+  padding:0px;
+}
+.nfty-protocol.container-fluid {
+  padding: 0px;
+}
+.nfty-protocol .achivement-section{
+  margin-bottom:300px;
+}
+}
+@media (max-width:1024px) and (min-width:991px) {
+  .buyer-review .other-reviewer-img{
+    width: 100%;
+  }
+  .buyer-review .other-reviewer-img img{
+    margin-right:10px ;
+  }
+}
+@media (max-width: 992px) {
+  iframe{
+    height: auto;
+    width: auto;
+  }
+  .why-nfty .roi-calc-img {
+    height:500px
+  }
+  .why-nfty .heading-text{
+    font-size:30px;
+  }
+  .why-nfty .heading-sub-text {
+    font-size: 20px;
+    line-height: 38px;
+}
+.why-nfty .simple-text{
+  font-size:16px;
+  line-height:30px;
+  padding-right: 50px;
+}
+.about-nfty .founder-text{
+  line-height:32px;
+  font-size:18px;
+}
+.tokenomics-whitepaper .white-paper-img img {
+  width: 100%;
+    margin-right: 0px;
+}
+.tokenomics-whitepaper .heading-text {
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+.protocol-head .heading-text{
+  font-size: 42px;
+  line-height: 55px;
+}
+.protocol-head .simple-text{
+  line-height: 30px;
+  font-size: 19px;
+}
+.nfty-protocol .about-nfty ,.hero-head{
+  margin-left: -45px;
+}
+.protocol-head .right-images .static-video-img {
+  margin-right: -45px;
+}
+.static-video-img{
+  width: 68%;
+}
+.video-box{
+  margin-top:50px
+}
+iframe#widget2{
+  margin-top:10px;
+  width: 350px;
+  height: 350px;
+}
+.container, .nfty-protocol{
+  padding-top:0px;
+}
+.white-paper-img{
+  text-align:center;
+}
+}
+
+
+
+@media (max-width: 991px) {
+ .dropdown-btn,.nav-tab {
+    display: block;
+  }
+  .navbar .nav-buy-app{
+    display: none;
+  }
+  .f-18 {
+    font-size: 16px;
+  }
+  .navbar-brand {
+    margin-left: 15px;
+  }
+  .hero-banner{
+    flex-direction: reset;
+  }
+  .reviewer-preview-top {
+    display: none;
+  }
+  
+  .reviewer-preview-side {
+    display: flex;
+  }
+  .buyer-review .other-reviewer-img{
+    width: 100%;
+  }
+  .buyer-review .other-reviewer-img img{
+    margin-right:10px ;
+  }
+  .buyer-review .heading-sub-text{
+    padding-right: 0px;
+  }
+  .buyer-review .heading-text{
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .reviewer-preview-top {
+    display: none;
+  }
+  
+  .reviewer-preview-side {
+    display: flex;
+    justify-content: center;
+  }
+ 
+  
+}
+@media (max-width: 440px) {
+  .navbar {
+    height: 68px;
+  }
+}
+
+@media (min-width: 356px) and (max-width: 440px) {
+  /* .navbar-btns {
+    width: 100%;
+    justify-content: flex-end;
+  } */
+  .about-us-heading, 
+  .roadMap-heading,
+  .contact-us-heading,
+ .privacy-heading ,
+  .governance-heading,
+  .terms-heading,
+  .news-heading {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    padding: 20px 38px;
+  }
+  .about-us-heading .about-us-img img,
+  .roadMap-heading .roadMap-img img,
+  .contact-us-heading .contact-us-img img,
+  .governance-heading .governance-img img,
+  .privacy-heading .privacy-img img,
+  .terms-heading .terms-img img,
+  .news-heading .news-img img {
+    height: 200px;
+
+}
+#Embed{display:none !important}
+
+.reviewer-preview-top {
+  display: flex;
+}
+
+.reviewer-preview-side {
+  display: none;
+}
+
+.white-paper-img{
+  margin-left: -67px;
+}
+.about-us-heading .about-us-img ,
+  .contact-us-heading .contact-us-img ,
+  .governance-heading .governance-img ,
+  .terms-heading .terms-img,
+  .news-heading .news-img  {
+    
+    align-self: center;
+}
+.about-us-container .head-text,
+.contact-us-container .head-text,
+.support-section .head-text,
+.governance-container .head-text,
+.terms-container .head-text,
+.news-container .head-text{
+  font-size: 18px;
+  font-weight: bold;
+}
+.about-us-container .normal-text,
+.contact-us-container .normal-text,
+.governance-container .normal-text,
+.terms-container .normal-text,
+.news-container .normal-text{
+  line-height: 28px;
+  font-size: 14px;
+}
+.about-us-container .sub-head-text,
+.support-section .sub-head-text{
+  font-size: 16px;
+  font-weight: bold;
+}
+.protocol-head .heading-text,
+.about-us-heading .heading-text,
+.contact-us-heading .heading-text,
+.governance-heading .heading-text,
+.terms-heading .heading-text,
+.news-heading .heading-text{
+  font-size: 28px;
+}
+
+.subscribe .heading-text{
+  font-size: 22px;
+}
+.about-us-heading .heading-text,
+.contact-us-heading .heading-text,
+.governance-heading .heading-text,
+.terms-heading .heading-text,
+.news-heading .heading-text{
+  align-self: center;
+}
+.nfty-protocol .social-ranking,
+.faq-section .faq,
+.about-us,
+.governance,
+.terms,
+.contact-us{
+  padding: 30px;
+}
+.about-us-container .navigation-section ,
+.governance-container .navigation-section {
+ 
+  text-align-last: center;
+}
+
+.governance-container #corporation,
+.about-us-container #introduction{
+  margin-top: 30px;
+}
+
+.about-us-container .ceo-msg{
+  flex-direction: column;
+}
+.ceo-msg .message-section{
+  margin-left: 0px;
+  margin-top: 30px;
+}
+ .priv-body{
+   margin-bottom: 30px;
+   margin-top:15px;
+ }
+ .roadMap-flow {
+   min-width: 300px;
+ }
+.footer .footer-first-column{
+  padding-right: 0px;
+}
+
+.cms-footer .cms-footer-content{
+  margin-right: 25px;
+}
+.table-scroll{
+  overflow-x: scroll;
+}
+.hero-banner{
+  flex-direction: column-reverse;
+  margin: 0;
+}
+.protocol-head .right-images{
+  margin-left: -75px;
+}
+
+.static-video-img{
+  width: 55%;
+
+}
+.protocol-head .right-images .static-video-img{
+  margin-right: 0px;
+}
+
+.protocol-head .heading-text{
+  font-size: 48px;
+  text-align: center;
+}
+.protocol-head .simple-text {
+  font-size: 24px;
+  text-align: center;
+  padding-right: 0px;
+  margin-top: 38px;
+}
+.protocol-head .button-group{
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 8px;
+}
+.tokenomics-whitepaper .white-paper-img img {
+  margin-right: 0;
+  height: 400px;
+    width: 315px;
+}
+.tokenomics-whitepaper .heading-text,
+.tokenomics-whitepaper .simple-text{
+  text-align: center;
+}
+.coming-soonbtn{
+  text-align: center;
+}
+
+.single-data .margin-left{
+  margin: 0 auto;
+  font-size:11px;
+}
+
+.footer{
+  padding:25px;
+}
+
+.why-nfty .roi-calc-img {
+  margin-top: 50px;
+  margin-right: 50px;
+}
+.about-us-container .mission-data, .about-us-container .vission-data{
+  height: 560px;
+}
+.nfty-protocol .subscribe-section{
+  padding: 0px 23px 30px 23px;  
+}
+.subscribe-section .subscribe{
+padding: 50px 15px;
+}
+.app-launchbtn{
+  text-align: center;
+}
+.nfty-protocol .protocol-head{
+  padding-left: 40px;
+}
+
+.hero-head{
+  margin-left: 0px;
+}
+.hero-head1{
+  margin-left: -45px;
+}
+.why-nfty .hero-head1{
+  margin-left: -25px;
+}
+.why-nfty .heading-text,
+.why-nfty .heading-sub-text,
+.roi-head,
+.why-nfty .simple-text{
+  text-align: center;
+}
+.why-nfty .simple-text{
+  padding-right: 0px;
+}
+.nfty-protocol .buyer-review{
+  padding-left: 50px;
+}
+.buyer-review .heading-sub-text{
+  text-align: center;
+  padding-right: 0;
+}
+.nfty-protocol .buyer-review {
+  padding-left: 35px;
+}
+.nfty-protocol .protocol-head {
+  padding-left:0px;
+}
+.reviewer-img{
+  margin-top:15px;
+}
+.video-box{
+  margin-top:0px
+}
+
+iframe#widget2{
+ margin-top: 15px;
+ /* margin: 0 15px; */
+ width: 315px;
+ height: 315px;
+}
+.nfty-protocol .tokenomics-whitepaper{
+  padding-left: 60px;
+}
+.head-video-section{
+  margin-top: 30px;
+}
+.roi-head{
+  line-height: 35px;
+}
+.about-nfty .founder-text{
+  padding: 35px 0px 0px 0px;
+}
+.buyer-review .other-reviewer-img img{
+  height: 65px;
+  height: 65px;
+}
+.buyer-review .heading-text{
+  text-align: center;
+}
+.protocol-head .text-and-buttons{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.news-container .date-text{
+  font-size: 14px;
+}
+.news{
+  margin-top:40px;
+}
+.nfty-protocol .achivement-section{
+  padding: 30px 38px;
+  height: 400px;
+}
+.achivement-section .nav .nav-link{
+    font-size: 20px;
+    margin-right: 12px;
+}
+}
+
+@media (min-width: 456px) and (max-width: 768px){
+  .protocol-head .button-group a{
+    font-size: 15px;
+  }
+  .achivement-section{
+    height: 450px;
+  }
+  .nfty-protocol .achivement-section{
+    margin-bottom:250px;
+  }
+}
+
+

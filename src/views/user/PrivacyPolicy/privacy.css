@@ -1,0 +1,64 @@
+.nfty-head {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 40px;
+}
+img.priv-vectorimg {
+  width: 50px;
+  height: 60px;
+}
+.priv-cardhead {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+.priv-cardtext {
+  line-height: 30px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.priv-body {
+  background: #ffffff;
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  border-color: #ffffff;
+  min-height: 265px;
+}
+body.dark .priv-body {
+  background: #0c0b0f;
+  border-color: #0c0b0f !important;
+}
+body.dark .priv-cardhead,
+body .dark .priv-cardtext {
+  color: #ffffff;
+}
+body.dark .priv-body {
+  background: #0c0b0f;
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+}
+.priv-para {
+  margin-top: 50px;
+}
+.priv-cardnum {
+  text-decoration: none;
+  color: black;
+}
+body.dark .priv-cardnum {
+  color: #ffffff;
+}
+body.dark .table-borderless > :not(caption) > * > * {
+  color: #ffffff;
+}
+.priv-paraDetails {
+  line-height: 30px;
+  font-size: 16px;
+}
+.priv-cookiehead {
+  font-size: 22px;
+  font-weight: bold;
+}
+.priv-tablehead {
+  background: #ffd600;
+}
